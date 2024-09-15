@@ -1,3 +1,4 @@
+
 // import React, { useEffect, useState } from "react";
 // import { motion } from "framer-motion";
 // import { useNavigate } from "react-router-dom";
@@ -21,6 +22,19 @@
 //     transition: {
 //       duration: 2,
 //       repeat: Infinity,
+//     },
+//   },
+//   // New variant for image animation
+//   imageSlide: {
+//     initial: {
+//       x: "-100vw", // Start off-screen to the left
+//     },
+//     animate: {
+//       x: 0,
+//       transition: {
+//         duration: 1, // Adjust the duration to your preference
+//         ease: "easeInOut",
+//       },
 //     },
 //   },
 // };
@@ -77,9 +91,18 @@
 //           </svg>
 //         </motion.div>
 //       </div>
-//       <div className="flex items-center ">
-//         <img src="/720.jpg" alt="heroImage" className="w-[20rem] heroImage" />
-//       </div>
+//       <motion.div
+//         className="flex items-center"
+//         variants={textVariants.imageSlide}
+//         initial="initial"
+//         animate="animate"
+//       >
+//         <img
+//           src="/720.jpg"
+//           alt="heroImage"
+//           className="w-full max-w-[35rem] h-auto"
+//         />
+//       </motion.div>
 //     </div>
 //   );
 // };
@@ -110,15 +133,14 @@ const textVariants = {
       repeat: Infinity,
     },
   },
-  // New variant for image animation
   imageSlide: {
     initial: {
-      x: "-100vw", // Start off-screen to the left
+      x: "-100vw",
     },
     animate: {
       x: 0,
       transition: {
-        duration: 1, // Adjust the duration to your preference
+        duration: 1,
         ease: "easeInOut",
       },
     },
@@ -134,15 +156,19 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex justify-evenly my-[3rem]">
-      <div className="flex flex-col w-[30rem] gap-[1rem]">
-        <h1 className="madimi-one-regular text-[3.5rem] font-bold">
-          Courier and Parcel Services{" "}
-          <span className="text-[#2874fc]">Revoltionised</span>
+    <div className="flex flex-col lg:flex-row justify-evenly my-[3rem] lg:my-[5rem]">
+      <div className="flex flex-col w-full lg:w-[40%] gap-[1rem] text-center lg:text-left">
+        <h1 className="text-[2.5rem] lg:text-[3.5rem] font-bold leading-tight">
+          Revolutionizing{" "}
+          <span className="text-[#2874fc]">Agriculture</span> with Smart{" "}
+          <span className="text-[#2874fc]">Contracts</span>
         </h1>
+        <p className="text-[1.2rem] mb-[2rem]">
+          Connect with farmers and buyers seamlessly. Explore our platform for secure, transparent, and efficient contract farming.
+        </p>
         <div
-          className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[18rem] flex justify-center cursor-pointer py-[1rem] text-[0.9rem] text-white font-bold"
-          onClick={() => navigate(isLoggedInUser ? "/p2p" : "/signup")}
+          className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[18rem] flex justify-center mx-auto lg:mx-0 cursor-pointer py-[1rem] text-[1rem] text-white font-bold rounded-lg"
+          onClick={() => navigate(isLoggedInUser ? "/marketplace" : "/signup")}
         >
           Get Started
           <div className="flex items-center ml-[0.5rem]">
@@ -152,7 +178,7 @@ const Hero = () => {
               viewBox="0 0 24 24"
               strokeWidth="3.5"
               stroke="currentColor"
-              className="w-4 h-4 font-bold hover:w-6 hover:h-6"
+              className="w-4 h-4 font-bold"
             >
               <path
                 strokeLinecap="round"
@@ -163,7 +189,7 @@ const Hero = () => {
           </div>
         </div>
         <motion.div
-          className="scroll-img "
+          className="scroll-img mx-auto lg:mx-0"
           variants={textVariants}
           animate="scrollButton"
         >
@@ -178,15 +204,15 @@ const Hero = () => {
         </motion.div>
       </div>
       <motion.div
-        className="flex items-center"
+        className="flex items-center mt-[2rem] lg:mt-0"
         variants={textVariants.imageSlide}
         initial="initial"
         animate="animate"
       >
         <img
-          src="/720.jpg"
-          alt="heroImage"
-          className="w-full max-w-[35rem] h-auto"
+          src="/agriculture-hero.jpg" // Updated to a more relevant image for KrishiConnect
+          alt="KrishiConnect Hero"
+          className="w-full max-w-[35rem] h-auto rounded-lg shadow-lg"
         />
       </motion.div>
     </div>
@@ -194,3 +220,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
