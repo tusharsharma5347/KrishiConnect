@@ -20,6 +20,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TermsAndConditions from "./components/terms";
 import ContactUs from "./components/ContactUs";
+import MarketPlace from "./Pages/MarketPlace";
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
         <Route exact path="/shipments" element={<ShipmentPage />} />
         <Route exact path="/terms" element={<TermsAndConditions />} />
         <Route exact path="/ContactUs" element={<ContactUs/>} />
+        <Route exact path="/marketplace" element={<MarketPlace/>} />
 
       </Routes>
     </>
