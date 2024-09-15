@@ -157,7 +157,7 @@ const Nav = () => {
               className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
               onClick={() => navigate("/login")}
             >
-              Login
+              Logout
             </p>
             <div
               className="bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
