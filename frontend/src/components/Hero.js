@@ -212,7 +212,7 @@ const Hero = () => {
         <img
           src="/agriculture-hero.jpg" // Updated to a more relevant image for KrishiConnect
           alt="KrishiConnect Hero"
-          className="w-full max-w-[35rem] h-auto rounded-lg shadow-lg"
+          className="w-full max-w-[35rem] h-auto "
         />
       </motion.div>
     </div>
