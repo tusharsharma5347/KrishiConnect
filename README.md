@@ -1,3 +1,1 @@
-# QuickShip
-# KrishiConnect
 # KrishiConnect
