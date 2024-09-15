@@ -44,12 +44,12 @@ const ContactUs = () => {
         {/* Contact Methods Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Call Us */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition duration-300">
+          <div className="bg-white p-8 rounded-xl shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <PhoneIcon className="h-12 w-12 text-[#2874fc] mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800">Call Us</h3>
             <p className="text-gray-600 mt-2">For immediate assistance, call us:</p>
             <a href="tel:+919876543210" className="text-lg font-medium text-[#2874fc] mt-4 inline-block">
-              +91 98765 43210
+              9079999623
             </a>
             <button className="mt-4 bg-gradient-to-r from-[#2874fc] to-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-2xl transition duration-300">
               कॉल करें
@@ -57,7 +57,7 @@ const ContactUs = () => {
           </div>
 
           {/* Email Us */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition duration-300">
+          <div className="bg-white p-8 rounded-xl shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <MailIcon className="h-12 w-12 text-[#2874fc] mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800">Email Us</h3>
             <p className="text-gray-600 mt-2">Reach out to us via email for support or queries:</p>
@@ -67,7 +67,7 @@ const ContactUs = () => {
           </div>
 
           {/* Visit Us */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition duration-300">
+          <div className="bg-white p-8 rounded-xl shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <LocationMarkerIcon className="h-12 w-12 text-[#2874fc] mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800">Visit Us</h3>
             <p className="text-gray-600 mt-2">Office Address:</p>
@@ -126,12 +126,14 @@ const ContactUs = () => {
                 <button
                   type="button"
                   onClick={isRecording ? stopRecording : startRecording}
-                  className={`bg-${isRecording ? " bg-red-500" : "green-500"} text-green px-6 py-3 rounded-full shadow-lg hover:shadow-2xl transition duration-300`}
+                  className={`flex items-center justify-center w-16 h-16 rounded-full shadow-lg hover:shadow-2xl transition duration-300 ${
+                    isRecording ? "bg-red-500 animate-pulse" : "bg-green-500"
+                  }`}
                 >
-                  {isRecording ? "Stop Recording" : "Start Recording"}
+                  <MicrophoneIcon className="h-8 w-8 text-white" />
                 </button>
                 {audioURL && (
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-center space-x-2 flex-grow">
                     <audio controls src={audioURL} className="w-full"></audio>
                     <button
                       type="button"
