@@ -1,7 +1,5 @@
 import "./App.css";
 import Application from "./components/Application";
-import Approach from "./components/Approach";
-import Backup_Manager from "./components/Backup_Manager";
 import Benefits from "./components/Benefits";
 import Faq from "./components/Faq";
 import Hero from "./components/Hero";
@@ -21,6 +19,7 @@ import ShipmentPage from "./components/shipment";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TermsAndConditions from "./components/terms";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -55,6 +54,8 @@ function App() {
         <Route exact path="/tracking" element={<TrackingAndSupport />} />
         <Route exact path="/shipments" element={<ShipmentPage />} />
         <Route exact path="/terms" element={<TermsAndConditions />} />
+        <Route exact path="/ContactUs" element={<ContactUs/>} />
+
       </Routes>
     </>
   );
