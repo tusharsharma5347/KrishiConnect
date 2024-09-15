@@ -132,13 +132,13 @@ const Nav = () => {
           </p>
           <p
             className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-            onClick={() => navigate("/about")}
+            onClick={() => navigate("/aboutus")}
           >
             About Us
           </p>
           <p
             className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/contactUs")}
           >
             Contact Us
           </p>
@@ -168,7 +168,7 @@ const Nav = () => {
           </div>
         )}
       </div>
-      <div className="w-full h-[0.2rem] bg-gray-300 mt-[1rem]" />
+      <div className="w-full h-[0.2rem] bg-gray-300 mt-[1rem]"/>
     </div>
   );
 };

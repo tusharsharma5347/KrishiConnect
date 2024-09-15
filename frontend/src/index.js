@@ -13,6 +13,7 @@ root.render(
     <BrowserRouter>
     <div className="flex flex-col min-h-screen"> {/* Flex container with min-height of screen */}
         <Nav />
+        <div id="google_translate_element"></div> 
         <App />
         <Footer className="mt-auto" /> {/* "mt-auto" pushes the footer to the bottom */}
       </div>

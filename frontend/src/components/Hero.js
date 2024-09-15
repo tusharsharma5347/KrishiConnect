@@ -156,7 +156,9 @@ const Hero = () => {
   }, []);
 
   return (
+    
     <div className="flex flex-col lg:flex-row justify-evenly my-[3rem] lg:my-[5rem]">
+      <div id="google_translate_element"></div>
       <div className="flex flex-col w-full lg:w-[40%] gap-[1rem] text-center lg:text-left">
         <h1 className="text-[2.5rem] lg:text-[3.5rem] font-bold leading-tight">
           Revolutionizing{" "}
