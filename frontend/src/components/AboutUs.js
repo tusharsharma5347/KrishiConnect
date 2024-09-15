@@ -9,7 +9,7 @@ const AboutUs = () => {
     if (inView) {
       const timer = setInterval(() => {
         setCount((prev) => ({
-          parcels: Math.min(prev.parcels + 100, 10000),
+          parcels: Math.min(prev.parcels + 100, 11000),
           cities: Math.min(prev.cities + 5, 50),
           customers: Math.min(prev.customers + 50, 5000),
         }));
