@@ -1,3 +1,124 @@
+// // // import React from "react";
+// // // import { useNavigate } from "react-router-dom";
+
+// // // const Application = () => {
+// // //   const navigate = useNavigate();
+
+// // //   return (
+// // //     <div>
+// // //       {/* FastTrack Delivery  */}
+// // //       <div className="mt-[5rem] flex flex-col ">
+// // //         <div className="flex flex-col gap-[0.2rem] px-[4rem] items-center">
+// // //           <h3 className="text-bold text-[4rem] underline-offset-4">
+// // //             Our Services
+// // //           </h3>
+// // //           <div className="h-[0.4rem] w-[10rem] bg-[#2874fc]" />
+// // //         </div>
+// // //         <div className="flex justify-around">
+// // //           <div className="flex flex-col w-[35rem] mt-[1rem] gap-[1rem] px-auto justify-center">
+// // //             <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
+// // //               FastTrack Delivery
+// // //             </h1>
+// // //             <h1 className="anton-regular text-[2.5rem]">
+// // //               Rapid Parcel Delivery Service
+// // //             </h1>
+// // //             <h3 className="yantramanav-regular text-[1.1rem]">
+// // //               FastTrack Delivery connects people who want to send parcels with
+// // //               travelers on the same route, drastically reducing delivery times.
+// // //               Instead of waiting 4-5 days for a conventional courier, your
+// // //               parcel can arrive within 1 day by leveraging travelers using
+// // //               trains or personal vehicles.
+// // //             </h3>
+// // //             <h4 className="text-[1.1rem] text-gray-500">
+// // //               Your parcel is securely delivered through verified carriers,
+// // //               ensuring both speed and safety.
+// // //             </h4>
+// // //             <div
+// // //               className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
+// // //               onClick={() => navigate("/fasttrack")}
+// // //             >
+// // //               Learn More
+// // //               <img src="./right.png" alt="Arrow" className="w-[2rem]" />
+// // //             </div>
+// // //           </div>
+// // //           <div className="flex items-center">
+// // //             <img
+// // //               src="/rapid.png"
+// // //               className="w-[40rem] border-2"
+// // //               alt="FastTrack Delivery"
+// // //             />
+// // //           </div>
+// // //         </div>
+// // //       </div>
+
+// // //       {/* Secure Transit */}
+// // //       <div className="flex justify-around">
+// // //         <div className="flex items-center">
+// // //           <img
+// // //             src="/secure.png"
+// // //             className="w-[35rem] h-[20rem] border-2"
+// // //             alt="Secure Transit"
+// // //           />
+// // //         </div>
+// // //         <div className="flex flex-col w-[35rem] mt-[1rem] gap-[1rem] px-auto justify-center">
+// // //           <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
+// // //             Secure Transit
+// // //           </h1>
+// // //           <h1 className="anton-regular text-[2.5rem]">
+// // //             Safe & Verified Parcel Handling
+// // //           </h1>
+// // //           <h3 className="yantramanav-regular text-[1.1rem]">
+// // //             Secure Transit ensures that your parcel is handled by verified
+// // //             carriers only. All parcels are transported in AC coaches to prevent
+// // //             theft or damage, with a strict weight limit of 5-6 kg to minimize
+// // //             inconvenience for other passengers.
+// // //           </h3>
+// // //           <h4 className="text-[1.1rem] text-gray-500">
+// // //             Trust Secure Transit for safe and reliable delivery every time.
+// // //           </h4>
+// // //           <div
+// // //             className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
+// // //             onClick={() => navigate("/securetransit")}
+// // //           >
+// // //             Learn More
+// // //             <img src="./right.png" alt="Arrow" className="w-[2rem]" />
+// // //           </div>
+// // //         </div>
+// // //       </div>
+
+// // //       {/* ExpressPath */}
+// // //       <div className="flex justify-around">
+// // //         <div className="flex flex-col w-[35rem] mt-[1rem] gap-[1rem] px-auto justify-center">
+// // //           <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
+// // //             ExpressPath
+// // //           </h1>
+// // //           <h1 className="anton-regular text-[2.5rem]">
+// // //             Optimized Delivery Routes
+// // //           </h1>
+// // //           <h3 className="yantramanav-regular text-[1.1rem]">
+// // //             ExpressPath optimizes delivery routes by matching your parcel with
+// // //             travelers already heading in your desired direction. This service
+// // //             reduces the environmental impact of delivery and ensures your parcel
+// // //             arrives as quickly as possible.
+// // //           </h3>
+// // //           <h4 className="text-[1.1rem] text-gray-500">
+// // //             Eco-friendly, efficient, and quick parcel delivery.
+// // //           </h4>
+// // //           <div className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold">
+// // //             Learn More
+// // //             <img src="./right.png" alt="Arrow" className="w-[2rem]" />
+// // //           </div>
+// // //         </div>
+// // //         <div>
+// // //           <img src="/opt.png" className="w-[40rem]" alt="ExpressPath" />
+// // //         </div>
+// // //       </div>
+// // //     </div>
+// // //   );
+// // // };
+
+// // // export default Application;
+
 // // import React from "react";
 // // import { useNavigate } from "react-router-dom";
 
@@ -6,16 +127,16 @@
 
 // //   return (
 // //     <div>
-// //       {/* FastTrack Delivery  */}
-// //       <div className="mt-[5rem] flex flex-col ">
+// //       {/* FastTrack Delivery */}
+// //       <div className="mt-[5rem] flex flex-col">
 // //         <div className="flex flex-col gap-[0.2rem] px-[4rem] items-center">
 // //           <h3 className="text-bold text-[4rem] underline-offset-4">
 // //             Our Services
 // //           </h3>
 // //           <div className="h-[0.4rem] w-[10rem] bg-[#2874fc]" />
 // //         </div>
-// //         <div className="flex justify-around">
-// //           <div className="flex flex-col w-[35rem] mt-[1rem] gap-[1rem] px-auto justify-center">
+// //         <div className="flex justify-around items-center mt-[2rem]">
+// //           <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
 // //             <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
 // //               FastTrack Delivery
 // //             </h1>
@@ -25,9 +146,6 @@
 // //             <h3 className="yantramanav-regular text-[1.1rem]">
 // //               FastTrack Delivery connects people who want to send parcels with
 // //               travelers on the same route, drastically reducing delivery times.
-// //               Instead of waiting 4-5 days for a conventional courier, your
-// //               parcel can arrive within 1 day by leveraging travelers using
-// //               trains or personal vehicles.
 // //             </h3>
 // //             <h4 className="text-[1.1rem] text-gray-500">
 // //               Your parcel is securely delivered through verified carriers,
@@ -44,7 +162,7 @@
 // //           <div className="flex items-center">
 // //             <img
 // //               src="/rapid.png"
-// //               className="w-[40rem] border-2"
+// //               className="w-[40rem] border-2 border-gray-300 rounded-lg shadow-lg p-[1rem] m-[1rem]"
 // //               alt="FastTrack Delivery"
 // //             />
 // //           </div>
@@ -52,15 +170,15 @@
 // //       </div>
 
 // //       {/* Secure Transit */}
-// //       <div className="flex justify-around">
+// //       <div className="flex justify-around items-center mt-[3rem]">
 // //         <div className="flex items-center">
 // //           <img
 // //             src="/secure.png"
-// //             className="w-[35rem] h-[20rem] border-2"
+// //             className="w-[35rem] h-[20rem] border-2 border-gray-300 rounded-lg shadow-lg p-[1rem] m-[1rem]"
 // //             alt="Secure Transit"
 // //           />
 // //         </div>
-// //         <div className="flex flex-col w-[35rem] mt-[1rem] gap-[1rem] px-auto justify-center">
+// //         <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
 // //           <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
 // //             Secure Transit
 // //           </h1>
@@ -70,8 +188,7 @@
 // //           <h3 className="yantramanav-regular text-[1.1rem]">
 // //             Secure Transit ensures that your parcel is handled by verified
 // //             carriers only. All parcels are transported in AC coaches to prevent
-// //             theft or damage, with a strict weight limit of 5-6 kg to minimize
-// //             inconvenience for other passengers.
+// //             theft or damage.
 // //           </h3>
 // //           <h4 className="text-[1.1rem] text-gray-500">
 // //             Trust Secure Transit for safe and reliable delivery every time.
@@ -87,8 +204,8 @@
 // //       </div>
 
 // //       {/* ExpressPath */}
-// //       <div className="flex justify-around">
-// //         <div className="flex flex-col w-[35rem] mt-[1rem] gap-[1rem] px-auto justify-center">
+// //       <div className="flex justify-around items-center mt-[3rem]">
+// //         <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
 // //           <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
 // //             ExpressPath
 // //           </h1>
@@ -97,9 +214,7 @@
 // //           </h1>
 // //           <h3 className="yantramanav-regular text-[1.1rem]">
 // //             ExpressPath optimizes delivery routes by matching your parcel with
-// //             travelers already heading in your desired direction. This service
-// //             reduces the environmental impact of delivery and ensures your parcel
-// //             arrives as quickly as possible.
+// //             travelers already heading in your desired direction.
 // //           </h3>
 // //           <h4 className="text-[1.1rem] text-gray-500">
 // //             Eco-friendly, efficient, and quick parcel delivery.
@@ -110,7 +225,11 @@
 // //           </div>
 // //         </div>
 // //         <div>
-// //           <img src="/opt.png" className="w-[40rem]" alt="ExpressPath" />
+// //           <img
+// //             src="/opt.png"
+// //             className="w-[40rem] border-2 border-gray-300 rounded-lg shadow-lg p-[1rem] m-[1rem]"
+// //             alt="ExpressPath"
+// //           />
 // //         </div>
 // //       </div>
 // //     </div>
@@ -118,7 +237,6 @@
 // // };
 
 // // export default Application;
-
 // import React from "react";
 // import { useNavigate } from "react-router-dom";
 
@@ -127,33 +245,31 @@
 
 //   return (
 //     <div>
-//       {/* FastTrack Delivery */}
+//       {/* Marketplace Connect */}
 //       <div className="mt-[5rem] flex flex-col">
 //         <div className="flex flex-col gap-[0.2rem] px-[4rem] items-center">
 //           <h3 className="text-bold text-[4rem] underline-offset-4">
-//             Our Services
+//             Our Solutions
 //           </h3>
 //           <div className="h-[0.4rem] w-[10rem] bg-[#2874fc]" />
 //         </div>
 //         <div className="flex justify-around items-center mt-[2rem]">
 //           <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
 //             <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
-//               FastTrack Delivery
+//               Marketplace Connect
 //             </h1>
 //             <h1 className="anton-regular text-[2.5rem]">
-//               Rapid Parcel Delivery Service
+//               Efficient Farm-to-Table Solutions
 //             </h1>
 //             <h3 className="yantramanav-regular text-[1.1rem]">
-//               FastTrack Delivery connects people who want to send parcels with
-//               travelers on the same route, drastically reducing delivery times.
+//               Marketplace Connect helps farmers and buyers connect directly, making the supply chain more efficient and transparent. Instead of traditional market delays, our platform ensures quicker transactions and better market access.
 //             </h3>
 //             <h4 className="text-[1.1rem] text-gray-500">
-//               Your parcel is securely delivered through verified carriers,
-//               ensuring both speed and safety.
+//               Our solution bridges the gap between farmers and buyers for a seamless experience.
 //             </h4>
 //             <div
 //               className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
-//               onClick={() => navigate("/fasttrack")}
+//               onClick={() => navigate("/marketplace")}
 //             >
 //               Learn More
 //               <img src="./right.png" alt="Arrow" className="w-[2rem]" />
@@ -161,41 +277,39 @@
 //           </div>
 //           <div className="flex items-center">
 //             <img
-//               src="/rapid.png"
-//               className="w-[40rem] border-2 border-gray-300 rounded-lg shadow-lg p-[1rem] m-[1rem]"
-//               alt="FastTrack Delivery"
+//               src="/marketplace.png"
+//               className="w-[40rem] border-1 border-gray-100 rounded-lg shadow-lg p-[0.5rem] m-[0.5rem]"
+//               alt="Marketplace Connect"
 //             />
 //           </div>
 //         </div>
 //       </div>
 
-//       {/* Secure Transit */}
+//       {/* Secure Contracts */}
 //       <div className="flex justify-around items-center mt-[3rem]">
 //         <div className="flex items-center">
 //           <img
-//             src="/secure.png"
-//             className="w-[35rem] h-[20rem] border-2 border-gray-300 rounded-lg shadow-lg p-[1rem] m-[1rem]"
-//             alt="Secure Transit"
+//             src="/securec.png"
+//             className="w-[35rem] h-[20rem] border-1 border-gray-100 rounded-lg shadow-lg p-[0.5rem] m-[0.5rem]"
+//             alt="Secure Contracts"
 //           />
 //         </div>
 //         <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
 //           <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
-//             Secure Transit
+//             Secure Contracts
 //           </h1>
 //           <h1 className="anton-regular text-[2.5rem]">
-//             Safe & Verified Parcel Handling
+//             Blockchain-Based Contract Management
 //           </h1>
 //           <h3 className="yantramanav-regular text-[1.1rem]">
-//             Secure Transit ensures that your parcel is handled by verified
-//             carriers only. All parcels are transported in AC coaches to prevent
-//             theft or damage.
+//             Secure Contracts uses blockchain technology to ensure transparent and tamper-proof agreements between farmers and buyers. This system guarantees contract integrity and protects both parties.
 //           </h3>
 //           <h4 className="text-[1.1rem] text-gray-500">
-//             Trust Secure Transit for safe and reliable delivery every time.
+//             Experience secure and reliable contract management with blockchain technology.
 //           </h4>
 //           <div
 //             className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
-//             onClick={() => navigate("/securetransit")}
+//             onClick={() => navigate("/securecontracts")}
 //           >
 //             Learn More
 //             <img src="./right.png" alt="Arrow" className="w-[2rem]" />
@@ -203,21 +317,20 @@
 //         </div>
 //       </div>
 
-//       {/* ExpressPath */}
+//       {/* AI Insights */}
 //       <div className="flex justify-around items-center mt-[3rem]">
 //         <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
 //           <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
-//             ExpressPath
+//             AI Insights
 //           </h1>
 //           <h1 className="anton-regular text-[2.5rem]">
-//             Optimized Delivery Routes
+//             Predictive Analytics for Farmers
 //           </h1>
 //           <h3 className="yantramanav-regular text-[1.1rem]">
-//             ExpressPath optimizes delivery routes by matching your parcel with
-//             travelers already heading in your desired direction.
+//             AI Insights offers predictive analytics to help farmers make informed decisions about their crops. Our AI tools analyze data to forecast trends and optimize farming strategies.
 //           </h3>
 //           <h4 className="text-[1.1rem] text-gray-500">
-//             Eco-friendly, efficient, and quick parcel delivery.
+//             Leverage AI to enhance crop management and improve yields.
 //           </h4>
 //           <div className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold">
 //             Learn More
@@ -226,9 +339,9 @@
 //         </div>
 //         <div>
 //           <img
-//             src="/opt.png"
-//             className="w-[40rem] border-2 border-gray-300 rounded-lg shadow-lg p-[1rem] m-[1rem]"
-//             alt="ExpressPath"
+//             src="/ai.png"
+//             className="w-[40rem] rounded-lg shadow-lg p-[1rem] m-[1rem]"
+//             alt="AI Insights"
 //           />
 //         </div>
 //       </div>
@@ -245,103 +358,105 @@ const Application = () => {
 
   return (
     <div>
-      {/* Marketplace Connect */}
-      <div className="mt-[5rem] flex flex-col">
-        <div className="flex flex-col gap-[0.2rem] px-[4rem] items-center">
-          <h3 className="text-bold text-[4rem] underline-offset-4">
-            Our Solutions
+      {/* FastTrack Delivery */}
+      <div className="mt-[5rem] flex flex-col items-center px-4 md:px-8 lg:px-16">
+        <div className="flex flex-col items-center text-center">
+          <h3 className="font-bold text-[2rem] md:text-[3rem] lg:text-[4rem] underline-offset-4">
+            Our Services
           </h3>
-          <div className="h-[0.4rem] w-[10rem] bg-[#2874fc]" />
+          <div className="h-[0.4rem] w-[6rem] md:w-[8rem] lg:w-[10rem] bg-[#2874fc]" />
         </div>
-        <div className="flex justify-around items-center mt-[2rem]">
-          <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
-            <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
-              Marketplace Connect
+        <div className="flex flex-col lg:flex-row justify-around items-center mt-[2rem] gap-8">
+          <div className="flex flex-col w-full lg:w-[35rem] gap-[1rem] justify-center">
+            <h1 className="text-[#2874fc] text-[1.2rem] md:text-[1.5rem] lg:text-[1.3rem]">
+              FastTrack Delivery
             </h1>
-            <h1 className="anton-regular text-[2.5rem]">
-              Efficient Farm-to-Table Solutions
+            <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[2.5rem] font-bold">
+              Rapid Parcel Delivery Service
             </h1>
-            <h3 className="yantramanav-regular text-[1.1rem]">
-              Marketplace Connect helps farmers and buyers connect directly, making the supply chain more efficient and transparent. Instead of traditional market delays, our platform ensures quicker transactions and better market access.
+            <h3 className="text-[1rem] md:text-[1.2rem] lg:text-[1.1rem]">
+              FastTrack Delivery connects people who want to send parcels with travelers on the same route, drastically reducing delivery times.
             </h3>
-            <h4 className="text-[1.1rem] text-gray-500">
-              Our solution bridges the gap between farmers and buyers for a seamless experience.
+            <h4 className="text-[1rem] md:text-[1.2rem] lg:text-[1.1rem] text-gray-500">
+              Your parcel is securely delivered through verified carriers, ensuring both speed and safety.
             </h4>
             <div
-              className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
-              onClick={() => navigate("/marketplace")}
+              className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[10rem] md:w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[0.8rem] md:py-[1rem] text-[1rem] md:text-[1.1rem] text-white font-bold"
+              onClick={() => navigate("/fasttrack")}
             >
               Learn More
-              <img src="./right.png" alt="Arrow" className="w-[2rem]" />
+              <img src="./right.png" alt="Arrow" className="w-[1.5rem] md:w-[2rem]" />
             </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center justify-center w-full lg:w-auto">
             <img
-              src="/marketplace.png"
-              className="w-[40rem] border-1 border-gray-100 rounded-lg shadow-lg p-[0.5rem] m-[0.5rem]"
-              alt="Marketplace Connect"
+              src="/rapid.png"
+              className="w-[80%] md:w-[60%] lg:w-[40rem] border-2 border-gray-300 rounded-lg shadow-lg p-[1rem] m-[1rem]"
+              alt="FastTrack Delivery"
             />
           </div>
         </div>
       </div>
 
-      {/* Secure Contracts */}
-      <div className="flex justify-around items-center mt-[3rem]">
-        <div className="flex items-center">
+      {/* Secure Transit */}
+      <div className="flex flex-col lg:flex-row justify-around items-center mt-[3rem] gap-8 px-4 md:px-8 lg:px-16">
+        <div className="flex items-center justify-center w-full lg:w-auto">
           <img
-            src="/securec.png"
-            className="w-[35rem] h-[20rem] border-1 border-gray-100 rounded-lg shadow-lg p-[0.5rem] m-[0.5rem]"
-            alt="Secure Contracts"
+            src="/secure.png"
+            className="w-[80%] md:w-[60%] lg:w-[35rem] border-2 border-gray-300 rounded-lg shadow-lg p-[1rem] m-[1rem]"
+            alt="Secure Transit"
           />
         </div>
-        <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
-          <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
-            Secure Contracts
+        <div className="flex flex-col w-full lg:w-[35rem] gap-[1rem] justify-center">
+          <h1 className="text-[#2874fc] text-[1.2rem] md:text-[1.5rem] lg:text-[1.3rem]">
+            Secure Transit
           </h1>
-          <h1 className="anton-regular text-[2.5rem]">
-            Blockchain-Based Contract Management
+          <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[2.5rem] font-bold">
+            Safe & Verified Parcel Handling
           </h1>
-          <h3 className="yantramanav-regular text-[1.1rem]">
-            Secure Contracts uses blockchain technology to ensure transparent and tamper-proof agreements between farmers and buyers. This system guarantees contract integrity and protects both parties.
+          <h3 className="text-[1rem] md:text-[1.2rem] lg:text-[1.1rem]">
+            Secure Transit ensures that your parcel is handled by verified carriers only. All parcels are transported in AC coaches to prevent theft or damage.
           </h3>
-          <h4 className="text-[1.1rem] text-gray-500">
-            Experience secure and reliable contract management with blockchain technology.
+          <h4 className="text-[1rem] md:text-[1.2rem] lg:text-[1.1rem] text-gray-500">
+            Trust Secure Transit for safe and reliable delivery every time.
           </h4>
           <div
-            className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
-            onClick={() => navigate("/securecontracts")}
+            className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[10rem] md:w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[0.8rem] md:py-[1rem] text-[1rem] md:text-[1.1rem] text-white font-bold"
+            onClick={() => navigate("/securetransit")}
           >
             Learn More
-            <img src="./right.png" alt="Arrow" className="w-[2rem]" />
+            <img src="./right.png" alt="Arrow" className="w-[1.5rem] md:w-[2rem]" />
           </div>
         </div>
       </div>
 
-      {/* AI Insights */}
-      <div className="flex justify-around items-center mt-[3rem]">
-        <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
-          <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
-            AI Insights
+      {/* ExpressPath */}
+      <div className="flex flex-col lg:flex-row justify-around items-center mt-[3rem] gap-8 px-4 md:px-8 lg:px-16">
+        <div className="flex flex-col w-full lg:w-[35rem] gap-[1rem] justify-center">
+          <h1 className="text-[#2874fc] text-[1.2rem] md:text-[1.5rem] lg:text-[1.3rem]">
+            ExpressPath
           </h1>
-          <h1 className="anton-regular text-[2.5rem]">
-            Predictive Analytics for Farmers
+          <h1 className="text-[2rem] md:text-[2.5rem] lg:text-[2.5rem] font-bold">
+            Optimized Delivery Routes
           </h1>
-          <h3 className="yantramanav-regular text-[1.1rem]">
-            AI Insights offers predictive analytics to help farmers make informed decisions about their crops. Our AI tools analyze data to forecast trends and optimize farming strategies.
+          <h3 className="text-[1rem] md:text-[1.2rem] lg:text-[1.1rem]">
+            ExpressPath optimizes delivery routes by matching your parcel with travelers already heading in your desired direction.
           </h3>
-          <h4 className="text-[1.1rem] text-gray-500">
-            Leverage AI to enhance crop management and improve yields.
+          <h4 className="text-[1rem] md:text-[1.2rem] lg:text-[1.1rem] text-gray-500">
+            Eco-friendly, efficient, and quick parcel delivery.
           </h4>
-          <div className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold">
+          <div
+            className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[10rem] md:w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[0.8rem] md:py-[1rem] text-[1rem] md:text-[1.1rem] text-white font-bold"
+          >
             Learn More
-            <img src="./right.png" alt="Arrow" className="w-[2rem]" />
+            <img src="./right.png" alt="Arrow" className="w-[1.5rem] md:w-[2rem]" />
           </div>
         </div>
-        <div>
+        <div className="flex items-center justify-center w-full lg:w-auto">
           <img
-            src="/ai.png"
-            className="w-[40rem] rounded-lg shadow-lg p-[1rem] m-[1rem]"
-            alt="AI Insights"
+            src="/opt.png"
+            className="w-[80%] md:w-[60%] lg:w-[40rem] border-2 border-gray-300 rounded-lg shadow-lg p-[1rem] m-[1rem]"
+            alt="ExpressPath"
           />
         </div>
       </div>
@@ -350,4 +465,3 @@ const Application = () => {
 };
 
 export default Application;
-
