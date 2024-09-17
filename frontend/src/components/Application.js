@@ -334,7 +334,7 @@ const Application = () => {
           </h4>
           <div className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold">
             Learn More
-            <img src="./right.png" alt="Arrow" className="w-[2rem] border-1 border-gray-100 rounded-lg shadow-lg p-[0.5rem] m-[0.5rem]" />
+            <img src="./right.png" alt="Arrow" className="w-[2rem]" />
           </div>
         </div>
         <div>
