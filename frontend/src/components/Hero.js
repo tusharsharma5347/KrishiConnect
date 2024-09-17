@@ -135,7 +135,7 @@ const textVariants = {
   },
   imageSlide: {
     initial: {
-      x: "-100vw",
+      x: "100vw",
     },
     animate: {
       x: 0,
@@ -214,7 +214,7 @@ const Hero = () => {
         <img
           src="/agriculture-hero.jpg" // Updated to a more relevant image for KrishiConnect
           alt="KrishiConnect Hero"
-          className="w-full max-w-[35rem] h-auto "
+          className="w-full max-w-[35rem] mb- h-auto "
         />
       </motion.div>
     </div>

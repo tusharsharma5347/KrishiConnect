@@ -51,8 +51,8 @@ const ContactUs = () => {
             <a href="tel:+919876543210" className="text-lg font-medium text-[#2874fc] mt-4 inline-block">
               9079999623
             </a>
-            <button className="mt-4 bg-gradient-to-r from-[#2874fc] to-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-2xl transition duration-300">
-              कॉल करें
+            <button className="mt-4 mx-4 bg-gradient-to-r from-[#2874fc] to-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-2xl transition duration-300">
+              Call Us
             </button>
           </div>
 
@@ -72,7 +72,7 @@ const ContactUs = () => {
             <h3 className="text-2xl font-semibold text-gray-800">Visit Us</h3>
             <p className="text-gray-600 mt-2">Office Address:</p>
             <p className="text-lg font-medium text-gray-700 mt-4">
-              123 KrishiConnect Street, Jaipur, Rajasthan 302001
+              IIIT UNA, Saloh, Una  (H.P) - 177209
             </p>
           </div>
         </div>
