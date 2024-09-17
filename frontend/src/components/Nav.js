@@ -176,11 +176,12 @@
 // export default Nav;
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa"; // For hamburger and close icons
 
 const Nav = () => {
   const navigate = useNavigate();
   const [isLoggedInUser, setIsLoggedInUser] = useState(null);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setIsLoggedInUser(localStorage.getItem("emailData"));
@@ -191,120 +192,152 @@ const Nav = () => {
     window.location.reload();
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <nav className="w-full bg-white shadow-md">
-      <div className="flex justify-between items-center w-[90%] mx-auto pt-[1.5rem]">
-        {/* Logo Section */}
+    <div className="flex flex-col w-[90%] mx-auto pt-[1.5rem]">
+      <div className="flex justify-between items-center">
         <div className="flex gap-[1rem] items-center">
           <img
-            src="/currency.png"
-            alt="Logo"
+            src="/currency.png" // Retaining the same logo
+            alt="KrishiConnect Logo"
             className="w-[2.5rem] h-[2.5rem] cursor-pointer"
             onClick={() => navigate("/")}
           />
           <h1
-            className="text-[2.5rem] font-semibold cursor-pointer"
+            className="text-[2rem] font-bold cursor-pointer text-[#2874fc]"
             onClick={() => navigate("/")}
           >
-            QuickShip
+            KrishiConnect
           </h1>
         </div>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex gap-[2rem] items-center">
-          <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-            onClick={() => navigate("/shipments")}
-          >
-            Shipments
-          </p>
-          <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-            onClick={() => navigate("/tracking")}
-          >
-            Tracking & Support
-          </p>
-          <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-            onClick={() => navigate("/AboutUs")}
-          >
-            About-Us
-          </p>
-          {isLoggedInUser ? (
-            <div
-              className="bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
-              onClick={onLogout}
-            >
-              Logout
-            </div>
+        <div className="md:hidden" onClick={toggleMenu}>
+          {menuOpen ? (
+            <FaTimes className="text-[2rem] cursor-pointer" />
           ) : (
-            <div className="flex gap-[1rem] items-center">
-              <p
-                className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-                onClick={() => navigate("/login")}
-              >
-                Login
-              </p>
-              <div
-                className="bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
-                onClick={() => navigate("/signup")}
-              >
-                Get Started
-              </div>
-            </div>
+            <FaBars className="text-[2rem] cursor-pointer" />
           )}
         </div>
-
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="text-3xl focus:outline-none"
+        <div className={`hidden md:flex gap-[2rem] items-center`}>
+          <p
+            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            onClick={() => navigate("/")}
           >
-            &#9776; {/* Hamburger icon */}
-          </button>
+            Home
+          </p>
+          <p
+            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            onClick={() => navigate("/marketplace")}
+          >
+            Marketplace
+          </p>
+          <p
+            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            onClick={() => navigate("/aboutus")}
+          >
+            About Us
+          </p>
+          <p
+            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            onClick={() => navigate("/contactUs")}
+          >
+            Contact Us
+          </p>
         </div>
+
+        {isLoggedInUser ? (
+          <div
+            className="hidden md:block bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
+            onClick={onLogout}
+          >
+            Logout
+          </div>
+        ) : (
+          <div className="hidden md:flex gap-[1rem] items-center">
+            <p
+              className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+              onClick={() => navigate("/login")}
+            >
+              Login
+            </p>
+            <div
+              className="bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
+              onClick={() => navigate("/signup")}
+            >
+              Get Started
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden flex flex-col gap-4 p-4 bg-white">
+      {menuOpen && (
+        <div className="md:hidden flex flex-col items-start mt-[1rem] gap-[1rem]">
           <p
             className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-            onClick={() => navigate("/shipments")}
+            onClick={() => {
+              navigate("/");
+              toggleMenu();
+            }}
           >
-            Shipments
+            Home
           </p>
           <p
             className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-            onClick={() => navigate("/tracking")}
+            onClick={() => {
+              navigate("/marketplace");
+              toggleMenu();
+            }}
           >
-            Tracking & Support
+            Marketplace
           </p>
           <p
             className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-            onClick={() => navigate("/AboutUs")}
+            onClick={() => {
+              navigate("/aboutus");
+              toggleMenu();
+            }}
           >
-            About-Us
+            About Us
+          </p>
+          <p
+            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            onClick={() => {
+              navigate("/contactUs");
+              toggleMenu();
+            }}
+          >
+            Contact Us
           </p>
           {isLoggedInUser ? (
             <div
               className="bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
-              onClick={onLogout}
+              onClick={() => {
+                onLogout();
+                toggleMenu();
+              }}
             >
               Logout
             </div>
           ) : (
-            <div className="flex gap-[1rem] flex-col">
+            <div className="flex flex-col gap-[1rem]">
               <p
                 className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
-                onClick={() => navigate("/login")}
+                onClick={() => {
+                  navigate("/login");
+                  toggleMenu();
+                }}
               >
                 Login
               </p>
               <div
                 className="bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
-                onClick={() => navigate("/signup")}
+                onClick={() => {
+                  navigate("/signup");
+                  toggleMenu();
+                }}
               >
                 Get Started
               </div>
@@ -312,8 +345,7 @@ const Nav = () => {
           )}
         </div>
       )}
-      <div className="w-full h-[0.2rem] bg-gray-300 mt-[1rem]" />
-    </nav>
+    </div>
   );
 };
 
