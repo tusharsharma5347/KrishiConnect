@@ -20,7 +20,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TermsAndConditions from "./components/terms";
 import ContactUs from "./components/ContactUs";
-import MarketPlace from "./Pages/MarketPlace";
+import MarketPlace from "./Pages/MarketPlace/MarketPlace";
+import CropCategory from "./Pages/CropCategory/CropCategory";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
         <Route exact path="/terms" element={<TermsAndConditions />} />
         <Route exact path="/ContactUs" element={<ContactUs/>} />
         <Route exact path="/marketplace" element={<MarketPlace/>} />
+        <Route exact path="/crops/:cropId" element={<CropCategory/>}/>
 
       </Routes>
     </>
