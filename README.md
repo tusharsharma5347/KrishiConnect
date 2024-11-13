@@ -97,7 +97,7 @@ Getting started with KrishiConnect is simple! Here’s how:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/krishiconnect.git
+   git clone https://github.com/Kaustubh22327/KrishiConnect
    cd krishiconnect
    ```
 
