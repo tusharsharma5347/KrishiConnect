@@ -1,7 +1,3 @@
-Here’s a captivating README draft for KrishiConnect, emphasizing its purpose and features to engage readers and showcase its impact:
-
----
-
 # 🌾 KrishiConnect - Empowering Farmers, Enriching Communities
 
 **KrishiConnect** is a revolutionary platform that connects Indian farmers directly with buyers, creating a fair, transparent, and efficient agricultural supply chain. By bridging the gap between producers and consumers, KrishiConnect brings fresh produce directly from farms to markets, ensuring better income for farmers and quality produce for buyers. With a user-friendly interface and bilingual support, KrishiConnect is built to empower rural communities across India.
@@ -124,14 +120,6 @@ KrishiConnect is an open-source project aimed at empowering India’s farmers, a
 1. **Fork the repository** and create your feature branch.
 2. **Submit a pull request** with a detailed description of your improvements or fixes.
 3. **Join the conversation**: Reach out with suggestions or questions!
-
-For more details, refer to our [contribution guidelines](link-to-contribution-guide).
-
----
-
-## 📜 License
-
-KrishiConnect is licensed under the MIT License. For more information, see the [LICENSE](link-to-license) file.
 
 ---
 
