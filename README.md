@@ -1,6 +1,3 @@
-Here’s a captivating README draft for KrishiConnect, emphasizing its purpose and features to engage readers and showcase its impact:
-
----
 
 # 🌾 KrishiConnect - Empowering Farmers, Enriching Communities
 
