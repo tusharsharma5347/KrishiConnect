@@ -260,48 +260,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Meet the Team Section */}
-      <div className="mb-[3rem] px-[1rem] md:px-0">
-        <h2 className="text-[2.5rem] font-semibold text-[#2874fc] mb-[1.5rem] text-center">
-          Meet the Team
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[2rem]">
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="/kaustubh.jpg"
-              alt="Kaustubh Sharma"
-              className="w-[12rem] h-[15rem] rounded-full mb-[1rem] shadow-lg object-cover"
-            />
-            <h3 className="text-[1.5rem] font-medium text-gray-800 mb-[0.5rem]">
-              Kaustubh Sharma
-            </h3>
-            <p className="text-[1.1rem] text-gray-600">Dev and Blockchain</p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="masti.JPG"
-              alt="Utkarsh Singh"
-              className="w-[12rem] h-[15rem] rounded-full mb-[1rem] shadow-lg object-cover"
-            />
-            <h3 className="text-[1.5rem] font-medium text-gray-800 mb-[0.5rem]">
-              Utkarsh Singh
-            </h3>
-            <p className="text-[1.1rem] text-gray-600">Dev Lead</p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="/kartik.jpeg"
-              alt="Kartik Shivhare"
-              className="w-[12rem] h-[15rem] rounded-full mb-[1rem] shadow-lg object-cover"
-            />
-            <h3 className="text-[1.5rem] font-medium text-gray-800 mb-[0.5rem]">
-              Kartik Shivhare
-            </h3>
-            <p className="text-[1.1rem] text-gray-600">Blockchain Lead</p>
-          </div>
-        </div>
-      </div>
-
       {/* Our Impact Section */}
       <div className="flex flex-col items-center mb-[3rem] px-[1rem] md:px-0">
         <h2 className="text-[2.5rem] font-semibold text-[#2874fc] mb-[1.5rem] text-center">
