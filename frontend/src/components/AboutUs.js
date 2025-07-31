@@ -196,7 +196,7 @@ const AboutUs = () => {
     <div className="flex flex-col w-[90%] mx-auto pt-[2rem] pb-[3rem] bg-gray-50">
       {/* Hero Section */}
       <div className="text-center mb-[3rem]">
-        <h1 className="text-[3rem] font-bold text-[#2874fc] mb-[1rem]">
+        <h1 className="text-[3rem] font-bold text-agritech-green mb-[1rem]">
           About KrishiConnect
         </h1>
         <p className="text-[1.25rem] text-gray-700 max-w-2xl mx-auto">
@@ -209,7 +209,7 @@ const AboutUs = () => {
       {/* Our Mission Section */}
       <div className="flex flex-col md:flex-row items-center md:space-x-[2rem] mb-[3rem] px-[1rem] md:px-0">
         <div className="md:w-1/2">
-          <h2 className="text-[2.5rem] font-semibold text-[#2874fc] mb-[1rem]">
+          <h2 className="text-[2.5rem] font-semibold text-agritech-green mb-[1rem]">
             Our Mission
           </h2>
           <p className="text-[1.2rem] text-gray-600 leading-relaxed">
@@ -231,7 +231,7 @@ const AboutUs = () => {
 
       {/* Our Story Section */}
       <div className="mb-[3rem] px-[1rem] md:px-0">
-        <h2 className="text-[2.5rem] font-semibold text-[#2874fc] mb-[1.5rem] text-center">
+        <h2 className="text-[2.5rem] font-semibold text-agritech-green mb-[1.5rem] text-center">
           Our Story
         </h2>
         <div className="space-y-[2rem]">
@@ -262,24 +262,24 @@ const AboutUs = () => {
 
       {/* Our Impact Section */}
       <div className="flex flex-col items-center mb-[3rem] px-[1rem] md:px-0">
-        <h2 className="text-[2.5rem] font-semibold text-[#2874fc] mb-[1.5rem] text-center">
+        <h2 className="text-[2.5rem] font-semibold text-agritech-green mb-[1.5rem] text-center">
           Our Impact
         </h2>
         <div className="flex flex-col md:flex-row justify-around w-full text-center">
           <div ref={ref} className="mb-[1.5rem] md:mb-0 animate-count">
-            <h3 className="text-[2.5rem] font-bold text-[#2874fc]">
+            <h3 className="text-[2.5rem] font-bold text-agritech-green">
               {count.contracts.toLocaleString()}
             </h3>
             <p className="text-[1.2rem] text-gray-600">Contracts Signed</p>
           </div>
           <div ref={ref} className="mb-[1.5rem] md:mb-0 animate-count">
-            <h3 className="text-[2.5rem] font-bold text-[#2874fc]">
+            <h3 className="text-[2.5rem] font-bold text-agritech-green">
               {count.farmers.toLocaleString()}
             </h3>
             <p className="text-[1.2rem] text-gray-600">Farmers Empowered</p>
           </div>
           <div ref={ref} className="animate-count">
-            <h3 className="text-[2.5rem] font-bold text-[#2874fc]">
+            <h3 className="text-[2.5rem] font-bold text-agritech-green">
               {count.buyers.toLocaleString()}
             </h3>
             <p className="text-[1.2rem] text-gray-600">Buyers Connected</p>
@@ -289,14 +289,14 @@ const AboutUs = () => {
 
       {/* Call to Action */}
       <div className="text-center px-[1rem] md:px-0">
-        <h2 className="text-[2.5rem] font-semibold text-[#2874fc] mb-[1rem]">
+        <h2 className="text-[2.5rem] font-semibold text-agritech-green mb-[1rem]">
           Join Our Mission
         </h2>
         <p className="text-[1.2rem] text-gray-600 mb-[1.5rem]">
           Whether you're a farmer or buyer, KrishiConnect is here to empower you
           with secure, efficient, and transparent farming contracts.
         </p>
-        <button className="bg-[#2874fc] text-white px-[2rem] py-[0.75rem] rounded-lg text-[1.1rem] font-semibold hover:bg-[#1a63d8] transition duration-300">
+        <button className="bg-agritech-green text-white px-[2rem] py-[0.75rem] rounded-lg text-[1.1rem] font-semibold hover:bg-green-700 transition duration-300">
           Get Started
         </button>
       </div>

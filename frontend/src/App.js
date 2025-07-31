@@ -22,10 +22,16 @@ import TermsAndConditions from "./components/terms";
 import ContactUs from "./components/ContactUs";
 import MarketPlace from "./Pages/MarketPlace/MarketPlace";
 import CropCategory from "./Pages/CropCategory/CropCategory";
+import Dashboard from "./components/Dashboard";
+import AddProduct from "./components/AddProduct";
+import MarketData from "./components/MarketData";
+import AIInsights from "./components/AIInsights";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
+      <Toaster position="top-right" />
       <Routes>
         <Route
           exact
@@ -34,16 +40,12 @@ function App() {
             <>
               <Hero />
               <Quote />
-              {/* <Approach/> */}
               <Benefits />
               <Application />
-              {/* <Backup_Manager/> */}
               <Faq />
             </>
           }
         />
-      </Routes>
-      <Routes>
         <Route exact path="/p2p" element={<Peer />} />
         <Route exact path="/ifb" element={<Institute />} />
         <Route exact path="/login" element={<Login />} />
@@ -59,7 +61,10 @@ function App() {
         <Route exact path="/ContactUs" element={<ContactUs/>} />
         <Route exact path="/marketplace" element={<MarketPlace/>} />
         <Route exact path="/crops/:cropId" element={<CropCategory/>}/>
-
+        <Route exact path="/dashboard" element={<Dashboard/>} />
+        <Route exact path="/add-product" element={<AddProduct/>} />
+        <Route exact path="/market-data" element={<MarketData/>} />
+        <Route exact path="/ai-insights" element={<AIInsights/>} />
       </Routes>
     </>
   );

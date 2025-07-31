@@ -1,138 +1,388 @@
-Here’s a captivating README draft for KrishiConnect, emphasizing its purpose and features to engage readers and showcase its impact:
+# 🌱 KrishiConnect - AI-Powered Agricultural Marketplace
 
----
+**KrishiConnect** is a comprehensive agricultural marketplace platform that connects farmers directly with buyers, powered by advanced AI insights and real-time communication systems. Built with modern web technologies, it provides a seamless experience for both farmers and buyers to trade agricultural products efficiently.
 
-# 🌾 KrishiConnect - Empowering Farmers, Enriching Communities
+## 🚀 Key Features
 
-**KrishiConnect** is a revolutionary platform that connects Indian farmers directly with buyers, creating a fair, transparent, and efficient agricultural supply chain. By bridging the gap between producers and consumers, KrishiConnect brings fresh produce directly from farms to markets, ensuring better income for farmers and quality produce for buyers. With a user-friendly interface and bilingual support, KrishiConnect is built to empower rural communities across India.
+### 🤖 **AI-Powered Insights**
+- **Google Gemini AI Integration** for intelligent market analysis
+- **Location-based Crop Recommendations** for farmers
+- **Market Sentiment Analysis** using Hugging Face API
+- **Price Prediction Models** with confidence scoring
+- **Demand Pattern Analysis** for strategic planning
+- **Personalized Recommendations** based on user behavior
+- **Weather Integration** for crop planning
 
----
+### 💬 **Real-Time Communication System**
+- **Buy Request System** - Buyers can send purchase requests to farmers
+- **Contact Request System** - Direct communication between buyers and farmers
+- **Farmer Approval Workflow** - Farmers can approve/reject buy requests
+- **Real-Time Notifications** using Socket.IO
+- **Order Creation** - Automatic order generation on approval
+- **Payment Integration** - Seamless payment processing
 
-### 📜 Table of Contents
-1. [About KrishiConnect](#about-krishiconnect)
-2. [Why KrishiConnect?](#why-krishiconnect)
-3. [How It Works](#how-it-works)
-4. [Key Features](#key-features)
-5. [Impact on Rural Communities](#impact-on-rural-communities)
-6. [UI and Design](#ui-and-design)
-7. [Getting Started](#getting-started)
-8. [Contributing](#contributing)
-9. [License](#license)
+### 📱 **Wishlist Management**
+- **Add Products** to personalized wishlist
+- **Priority Levels** (High, Medium, Low) for wishlist items
+- **Edit Notes** and descriptions for each item
+- **Contact Farmers** directly from wishlist
+- **Contact Status Tracking** - Know when you've contacted farmers
+- **Remove Items** with one-click functionality
 
----
+### 🏪 **Advanced Marketplace**
+- **Product Browsing** with advanced filtering
+- **Search Functionality** across product names and descriptions
+- **Category Filtering** (Grains, Vegetables, Fruits, Pulses, Spices, Dairy)
+- **Location-based Filtering** by state and city
+- **Real Product Data** fetched from backend
+- **Product Images** with fallback handling
+- **Availability Status** indicators
+- **Farmer Information** display
 
-## 🌍 About KrishiConnect
+### 👥 **Dual Dashboard System**
+#### **Farmer Dashboard**
+- **Farm Analytics** with crop performance metrics
+- **Weather Integration** for local weather data
+- **Crop Recommendations** based on location and season
+- **Product Management** - Add, edit, and track products
+- **Order Management** - View and process orders
+- **Revenue Analytics** with profit tracking
+- **Notification Center** for buy/contact requests
 
-KrishiConnect is dedicated to transforming India’s agricultural economy by providing farmers with a direct channel to sell their produce at fair prices while giving buyers reliable access to fresh goods. By bypassing intermediaries, KrishiConnect ensures farmers get better prices, buyers receive quality produce, and rural communities experience growth and stability.
+#### **Buyer Dashboard**
+- **Purchase Analytics** with spending patterns
+- **Wishlist Management** with priority tracking
+- **Order History** with detailed tracking
+- **Market Trends** analysis
+- **Price Alerts** for favorite products
+- **Notification Center** for approvals and updates
+- **Search History** tracking
 
----
+### 🔔 **Comprehensive Notification System**
+- **Real-Time Updates** using Socket.IO
+- **Buy Request Notifications** for farmers
+- **Contact Request Notifications** for farmers
+- **Approval/Rejection Notifications** for buyers
+- **Payment Notifications** for order completion
+- **Unread Count Badges** for new notifications
+- **Mark as Read** functionality
+- **Action Required** indicators
 
-## 🌟 Why KrishiConnect?
+### 🔐 **Security & Authentication**
+- **JWT Token Authentication** for secure access
+- **Role-based Access** (Farmer/Buyer)
+- **Password Hashing** with bcryptjs
+- **Rate Limiting** for API protection
+- **Input Validation** and sanitization
+- **Secure File Uploads** for product images
 
-KrishiConnect addresses the challenges faced by India’s farming community:
-- **Eliminates Middlemen**: Direct transactions between farmers and buyers ensure better income for producers.
-- **Supports Local Communities**: Empowering rural farmers with fair trade opportunities helps uplift entire communities.
-- **Quality and Transparency**: With direct access, buyers enjoy fresh produce, while farmers build trusted relationships with buyers.
+### 💳 **Payment Integration**
+- **Stripe Payment Gateway** integration
+- **Deposit/Withdrawal System** for wallet management
+- **Order Payment Processing** with secure transactions
+- **Payment History** tracking
+- **Transaction Status** monitoring
 
-By combining technology with a deep understanding of Indian agriculture, KrishiConnect is more than a marketplace – it’s a movement toward a more equitable and sustainable future for Indian farmers.
+## 🛠️ Technology Stack
 
----
+### **Backend**
+- **Node.js** with Express.js framework
+- **MongoDB** with Mongoose ODM
+- **Socket.IO** for real-time communication
+- **JWT** for authentication
+- **bcryptjs** for password hashing
+- **Multer** for file uploads
+- **Axios** for HTTP requests
+- **Node-cron** for scheduled tasks
+- **Stripe** for payment processing
 
-## 🔄 How It Works
+### **Frontend**
+- **React.js** with functional components
+- **React Router** for navigation
+- **Tailwind CSS** for styling
+- **Framer Motion** for animations
+- **Recharts** for data visualization
+- **React Dropzone** for file uploads
+- **React Hot Toast** for notifications
+- **Socket.IO Client** for real-time features
 
-1. **Sign Up as a Farmer or Buyer**: 
-   - **Farmers** list their produce, quantity, and price.
-   - **Buyers** browse available produce and place orders.
+### **AI/ML Integration**
+- **Google Gemini AI** for intelligent insights
+- **Hugging Face API** for sentiment analysis
+- **OpenWeatherMap API** for weather data
+- **Custom Statistical Models** for price prediction
 
-2. **Connecting Farmers & Buyers**:
-   - Farmers receive offers and negotiate directly with buyers, setting terms that work for both parties.
+## 📊 Database Schema
 
-3. **Secure Transactions**:
-   - Transactions are facilitated through a secure, user-friendly platform, ensuring transparency.
+### **User Model**
+```javascript
+{
+  fullName: String,
+  email: String,
+  password: String (hashed),
+  userType: 'farmer' | 'buyer',
+  language: 'english' | 'hindi',
+  state: String,
+  city: String,
+  address: String,
+  profileImage: String,
+  amount: Number (default: 0),
+  coins: Number (default: 0),
+  isVerified: Boolean,
+  token: String
+}
+```
 
-4. **Delivery Options**:
-   - Buyers can choose delivery options to suit their needs, creating a flexible system that works for all.
+### **Product Model**
+```javascript
+{
+  name: String,
+  description: String,
+  category: String,
+  price: Number,
+  quantity: Number,
+  unit: String,
+  images: [String],
+  farmer: ObjectId (ref: User),
+  location: {
+    state: String,
+    city: String
+  },
+  harvestDate: Date,
+  isAvailable: Boolean,
+  isOrganic: Boolean,
+  tags: [String]
+}
+```
 
-5. **Bilingual Interface**:
-   - The platform features both Hindi and English for ease of use, especially designed with the Indian farmer in mind.
+### **Notification Model**
+```javascript
+{
+  recipient: ObjectId (ref: User),
+  sender: ObjectId (ref: User),
+  type: 'buy_request' | 'contact_request' | 'approval' | 'rejection' | 'payment_received',
+  title: String,
+  message: String,
+  productId: ObjectId (ref: Product),
+  orderId: ObjectId (ref: Order),
+  status: 'unread' | 'read' | 'actioned',
+  actionRequired: Boolean,
+  actionType: 'approve' | 'reject' | 'contact' | 'payment',
+  metadata: Object,
+  isRead: Boolean
+}
+```
 
----
+### **Wishlist Model**
+```javascript
+{
+  buyer: ObjectId (ref: User),
+  product: ObjectId (ref: Product),
+  notes: String,
+  priority: 'low' | 'medium' | 'high',
+  contactRequested: Boolean,
+  contactRequestDate: Date
+}
+```
 
-## 🔑 Key Features
+### **Order Model**
+```javascript
+{
+  buyer: ObjectId (ref: User),
+  farmer: ObjectId (ref: User),
+  product: ObjectId (ref: Product),
+  quantity: Number,
+  totalAmount: Number,
+  status: 'pending' | 'approved' | 'rejected' | 'paid' | 'shipped' | 'delivered',
+  paymentStatus: 'pending' | 'completed' | 'failed',
+  shippingAddress: Object,
+  orderDate: Date
+}
+```
 
-- **🌾 Direct-to-Buyer Sales**: No middlemen, ensuring fair prices and efficient transactions.
-- **📱 User-Friendly Interface**: Simple, intuitive design with language support for easy use by all.
-- **📈 Real-Time Market Information**: Farmers stay informed about market trends and prices.
-- **💬 Bilingual Communication**: Farmers and buyers can communicate in Hindi or English, connecting across language barriers.
-- **📊 Analytics and Insights**: Both buyers and farmers can access insights on pricing and demand.
-- **🔔 Notifications & Updates**: Real-time updates for order confirmations, delivery tracking, and market trends.
+## 🚀 Installation & Setup
 
----
+### **Prerequisites**
+- Node.js (v14 or higher)
+- MongoDB (local or Atlas)
+- npm or yarn
 
-## 🌾 Impact on Rural Communities
+### **Backend Setup**
+```bash
+cd server
+npm install
+```
 
-KrishiConnect goes beyond being a marketplace. It’s a platform built with a purpose:
-- **Economic Empowerment**: By selling directly, farmers gain better incomes, creating a positive impact on their families and communities.
-- **Sustainable Agriculture**: With market insights, farmers make informed decisions, reducing waste and increasing efficiency.
-- **Community Development**: Through consistent income, rural communities gain financial stability, driving social and economic growth.
+Create `.env` file:
+```env
+PORT=8000
+MONGODB_URI=mongodb://localhost:27017/krishiconnect
+JWT_SECRET_KEY=your-secret-key
+STRIPE_SECRET_KEY=your-stripe-secret-key
+HUGGING_FACE_API_KEY=your-hugging-face-key
+GOOGLE_GEMINI_API_KEY=your-gemini-api-key
+OPENWEATHER_API_KEY=your-openweather-key
+```
 
----
+Start backend:
+```bash
+npm run dev
+```
 
-## 🎨 UI and Design
+### **Frontend Setup**
+```bash
+cd frontend
+npm install
+```
 
-KrishiConnect is designed with simplicity and usability in mind to cater to rural and urban users alike:
-- **Clean and Modern Design**: Using blue hues (#2874fc) for trustworthiness and modern appeal.
-- **Responsive Layout**: Flexible and accessible on all devices, from smartphones to desktops.
-- **Animated Benefits**: Key benefits highlighted with smooth animations, capturing users’ attention.
-- **Easy Navigation**: Clear sections for Contact, FAQ, and Support, enabling users to find information effortlessly.
-- **Supportive Components**: A detailed **Contact Us** page with sections for calls, emails, and even voice messages.
+Create `.env` file:
+```env
+REACT_APP_API_URL=http://localhost:8000
+REACT_APP_STRIPE_PUBLISHABLE_KEY=your-stripe-publishable-key
+REACT_APP_GOOGLE_GEMINI_API_KEY=your-gemini-api-key
+REACT_APP_OPENWEATHER_API_KEY=your-openweather-key
+```
 
-Our intuitive design ensures that farmers, buyers, and all users enjoy a smooth and engaging experience on KrishiConnect.
+Start frontend:
+```bash
+npm start
+```
 
----
+## 📡 API Endpoints
 
-## 🚀 Getting Started
+### **Authentication**
+- `POST /api/register` - User registration
+- `POST /api/login` - User login
+- `POST /api/userData` - Get user data
 
-Getting started with KrishiConnect is simple! Here’s how:
+### **Products**
+- `GET /api/products` - Get all products
+- `POST /api/products` - Add new product
+- `GET /api/products/:id` - Get single product
+- `PUT /api/products/:id` - Update product
+- `DELETE /api/products/:id` - Delete product
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Kaustubh22327/KrishiConnect
-   cd krishiconnect
-   ```
+### **Orders**
+- `GET /api/orders` - Get user orders
+- `POST /api/orders` - Place new order
+- `PUT /api/orders/:id` - Update order status
 
-2. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+### **Notifications**
+- `GET /api/notifications` - Get user notifications
+- `PATCH /api/notifications/:id/read` - Mark notification as read
+- `POST /api/buy-request` - Send buy request
+- `POST /api/contact-request` - Send contact request
+- `POST /api/approve-request` - Approve/reject request
 
-3. **Run the App**:
-   ```bash
-   npm start
-   ```
+### **Wishlist**
+- `GET /api/wishlist` - Get user wishlist
+- `POST /api/wishlist/add` - Add to wishlist
+- `PUT /api/wishlist/:id` - Update wishlist item
+- `DELETE /api/wishlist/:id` - Remove from wishlist
+- `POST /api/wishlist/:id/contact` - Contact from wishlist
 
-4. **Register as a Farmer or Buyer** and begin connecting with the agricultural community in India.
+### **AI Insights**
+- `GET /api/ai-insights` - Get AI insights
+- `POST /api/ai-insights` - Generate location-based recommendations
+- `POST /api/sentiment-analysis` - Analyze market sentiment
 
-For detailed documentation, please visit [our guide](link-to-docs).
+### **Payments**
+- `POST /api/deposit` - Process deposit
+- `POST /api/withdraw` - Process withdrawal
 
----
+## 🎯 User Workflows
+
+### **For Farmers**
+1. **Register/Login** as a farmer
+2. **Add Products** to marketplace
+3. **Receive Notifications** for buy/contact requests
+4. **Review Requests** with buyer details
+5. **Approve/Reject** buy requests
+6. **Track Orders** and payments
+7. **View Analytics** and insights
+
+### **For Buyers**
+1. **Register/Login** as a buyer
+2. **Browse Marketplace** with filters
+3. **Send Buy Requests** with quantity and messages
+4. **Contact Farmers** directly
+5. **Manage Wishlist** with priorities
+6. **Receive Notifications** for approvals
+7. **Proceed to Payment** when approved
+
+## 🔧 Configuration
+
+### **Environment Variables**
+- **Database**: MongoDB connection string
+- **JWT**: Secret key for token generation
+- **Stripe**: Payment gateway keys
+- **AI APIs**: Google Gemini, Hugging Face, OpenWeatherMap
+- **Security**: Rate limiting, CORS settings
+
+### **Features Configuration**
+- **Real-time Notifications**: Socket.IO enabled
+- **File Uploads**: Multer configuration
+- **Payment Processing**: Stripe integration
+- **AI Integration**: API key management
+
+## 🚀 Deployment
+
+### **Backend Deployment**
+```bash
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+### **Frontend Deployment**
+```bash
+# Build for production
+npm run build
+
+# Deploy to hosting service
+# (Netlify, Vercel, AWS, etc.)
+```
+
+## 🔒 Security Features
+
+- **JWT Authentication** with token expiration
+- **Password Hashing** using bcryptjs
+- **Rate Limiting** to prevent abuse
+- **Input Validation** and sanitization
+- **CORS Configuration** for cross-origin requests
+- **Helmet.js** for security headers
+- **File Upload Validation** for images
+
+## 📈 Performance Features
+
+- **Database Indexing** for fast queries
+- **Image Optimization** for product photos
+- **Lazy Loading** for better UX
+- **Caching** for frequently accessed data
+- **Compression** for API responses
+- **Real-time Updates** with Socket.IO
 
 ## 🤝 Contributing
 
-KrishiConnect is an open-source project aimed at empowering India’s farmers, and we welcome contributions! Here’s how to get involved:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
-1. **Fork the repository** and create your feature branch.
-2. **Submit a pull request** with a detailed description of your improvements or fixes.
-3. **Join the conversation**: Reach out with suggestions or questions!
+## 📄 License
 
-For more details, refer to our [contribution guidelines](link-to-contribution-guide).
+This project is licensed under the MIT License.
+
+## 📞 Support
+
+For support and questions:
+- Create an issue on GitHub
+- Contact the development team
+- Check the documentation
 
 ---
 
-## 📜 License
-
-KrishiConnect is licensed under the MIT License. For more information, see the [LICENSE](link-to-license) file.
-
----
-
-Thank you for exploring **KrishiConnect**! Together, let’s build a better, fairer future for India’s farmers. 🌱
+**KrishiConnect** - Empowering farmers and buyers with AI-driven insights and seamless communication! 🌱💻

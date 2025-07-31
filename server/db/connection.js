@@ -1,21 +1,20 @@
+// config/db-config.js
 const mongoose = require('mongoose');
 
-async function connect() {
+async function connectdb() {
+    const uri = 'mongodb+srv://tushar_31:Tushar_09@cluster0.c3v4zdy.mongodb.net';
+
     try {
-        mongoose.connect("mongodb+srv://bridgeline:bridgeline123@cluster0.0vimvgy.mongodb.net/BridgeLine");
-        const connection = mongoose.connection;
-
-        connection.on("connected", () => {
-            console.log("Database connected");
+        await mongoose.connect(uri, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
         });
 
-        connection.on("error", () => {
-            console.log("Error connecting to database");
-            process.exit();
-        });
+        console.log("Connected to MongoDB via Mongoose");
     } catch (error) {
-        console.log("Error connecting to database");
+        console.error("Failed to connect to MongoDB:", error.message);
+        throw error; // propagate the error to prevent app from starting
     }
 }
 
-module.exports = { connect };
+module.exports = connectdb;

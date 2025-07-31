@@ -1,60 +1,87 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 
-const HistorySchema=new mongoose.Schema({
-    amount:{
-        type:Number,
+const HistorySchema = new mongoose.Schema({
+    amount: {
+        type: Number,
     },
-    transactionType:{
-        type:String,
+    transactionType: {
+        type: String,
     },
-    receiver:{
-        type:String,
+    receiver: {
+        type: String,
     },
-    date:{
-        type:String,
+    date: {
+        type: String,
     },
-    amount:{
-        type:String,
+    senderCurrency: {
+        type: String,
     },
-    senderCurrency:{
-        type:String,
+    receiverCurrency: { // fixed typo
+        type: String
     },
-    receiverCurrecny:{
-        type:String
+    receiverCountry: {
+        type: String
     },
-    receiverCountry:{
-        type:String
-    },
-    senderCountry:{
-        type:String
+    senderCountry: {
+        type: String
     }
-    
-
-})
+});
 
 const userSchema = mongoose.Schema(
   {
-    fullName: { type: "String", required: true },
-    email: { type: "String", unique: true, required: true },
-    password: { type: "String", required: true },
-    phone:{
-        type:"Number",
-        required:true,
-        unique:true
+    fullName: { type: String, required: true },
+    email: { type: String, unique: true, required: true },
+    password: { type: String, required: true },
+    phone: {
+        type: Number,
+        required: true,
+        unique: true
     },
-    amount:{
-        type:"Number"
+    userType: {
+        type: String,
+        enum: ["farmer", "buyer"],
+        required: true
     },
-    coins:{
-        type:"Number"
+    language: {
+        type: String,
+        enum: ["english", "hindi"],
+        default: "english"
     },
-    country:{
-        type:"String",
+    amount: {
+        type: Number,
+        default: 0
     },
-    history:[HistorySchema]
-
-   
+    coins: {
+        type: Number,
+        default: 0
+    },
+    country: {
+        type: String,
+    },
+    state: {
+        type: String
+    },
+    city: {
+        type: String
+    },
+    address: {
+        type: String
+    },
+    profileImage: {
+        type: String
+    },
+    isVerified: {
+        type: Boolean,
+        default: false
+    },
+    token: {
+        type: String
+    },
+    history: [HistorySchema]
+  },
+  {
+    timestamps: true
   }
 );
 

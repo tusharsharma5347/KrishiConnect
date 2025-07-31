@@ -33,7 +33,7 @@ const ContactUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="text-center">
-          <h1 className="text-5xl font-extrabold text-[#2874fc] mb-4">
+          <h1 className="text-5xl font-extrabold text-agritech-green mb-4">
             Get in Touch
           </h1>
           <p className="max-w-2xl mx-auto text-xl text-gray-600 mb-8">
@@ -45,30 +45,30 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Call Us */}
           <div className="bg-white p-8 rounded-xl shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-            <PhoneIcon className="h-12 w-12 text-[#2874fc] mx-auto mb-4" />
+            <PhoneIcon className="h-12 w-12 text-agritech-green mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800">Call Us</h3>
             <p className="text-gray-600 mt-2">For immediate assistance, call us:</p>
-            <a href="tel:+919876543210" className="text-lg font-medium text-[#2874fc] mt-4 inline-block">
+            <a href="tel:+919876543210" className="text-lg font-medium text-agritech-green mt-4 inline-block">
               9079999623
             </a>
-            <button className="mt-4 mx-4 bg-gradient-to-r from-[#2874fc] to-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-2xl transition duration-300">
+            <button className="mt-4 mx-4 bg-agritech-gradient text-white px-6 py-3 rounded-full shadow-lg hover:shadow-2xl transition duration-300">
               Call Us
             </button>
           </div>
 
           {/* Email Us */}
           <div className="bg-white p-8 rounded-xl shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-            <MailIcon className="h-12 w-12 text-[#2874fc] mx-auto mb-4" />
+            <MailIcon className="h-12 w-12 text-agritech-green mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800">Email Us</h3>
             <p className="text-gray-600 mt-2">Reach out to us via email for support or queries:</p>
-            <a href="mailto:support@krishiconnect.com" className="text-lg font-medium text-[#2874fc] mt-4 inline-block">
+            <a href="mailto:support@krishiconnect.com" className="text-lg font-medium text-agritech-green mt-4 inline-block">
               support@krishiconnect.com
             </a>
           </div>
 
           {/* Visit Us */}
           <div className="bg-white p-8 rounded-xl shadow-lg text-center transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-            <LocationMarkerIcon className="h-12 w-12 text-[#2874fc] mx-auto mb-4" />
+            <LocationMarkerIcon className="h-12 w-12 text-agritech-green mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-gray-800">Visit Us</h3>
             <p className="text-gray-600 mt-2">Office Address:</p>
             <p className="text-lg font-medium text-gray-700 mt-4">
@@ -79,13 +79,13 @@ const ContactUs = () => {
 
         {/* Inquiry Form with Voice Message */}
         <div className="bg-white p-12 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
-          <h2 className="text-3xl font-semibold text-[#2874fc] text-center mb-8">Send Us a Message</h2>
+          <h2 className="text-3xl font-semibold text-agritech-green text-center mb-8">Send Us a Message</h2>
           <form className="space-y-6">
             <div className="relative">
               <input
                 id="name"
                 type="text"
-                className="peer h-12 w-full border-b-2 border-gray-300 text-lg text-gray-900 placeholder-transparent focus:outline-none focus:border-[#2874fc]"
+                className="peer h-12 w-full border-b-2 border-gray-300 text-lg text-gray-900 placeholder-transparent focus:outline-none focus:border-agritech-green"
                 placeholder="Enter your name"
                 required
               />
@@ -98,7 +98,7 @@ const ContactUs = () => {
               <input
                 id="email"
                 type="email"
-                className="peer h-12 w-full border-b-2 border-gray-300 text-lg text-gray-900 placeholder-transparent focus:outline-none focus:border-[#2874fc]"
+                className="peer h-12 w-full border-b-2 border-gray-300 text-lg text-gray-900 placeholder-transparent focus:outline-none focus:border-agritech-green"
                 placeholder="Enter your email"
                 required
               />
@@ -110,7 +110,7 @@ const ContactUs = () => {
             <div className="relative">
               <textarea
                 id="message"
-                className="peer h-32 w-full border-b-2 border-gray-300 text-lg text-gray-900 placeholder-transparent focus:outline-none focus:border-[#2874fc]"
+                className="peer h-32 w-full border-b-2 border-gray-300 text-lg text-gray-900 placeholder-transparent focus:outline-none focus:border-agritech-green"
                 placeholder="How can we help you?"
                 required
               ></textarea>
@@ -148,7 +148,7 @@ const ContactUs = () => {
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-[#2874fc] to-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-2xl transition duration-300 text-lg font-semibold"
+              className="w-full bg-agritech-gradient text-white px-6 py-3 rounded-full shadow-lg hover:shadow-2xl transition duration-300 text-lg font-semibold"
             >
               Send Message
             </button>

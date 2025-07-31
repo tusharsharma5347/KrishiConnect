@@ -207,7 +207,7 @@ const Nav = () => {
             onClick={() => navigate("/")}
           />
           <h1
-            className="text-[2rem] font-bold cursor-pointer text-[#2874fc]"
+            className="text-[2rem] font-bold cursor-pointer text-[#219653]"
             onClick={() => navigate("/")}
           >
             KrishiConnect
@@ -222,25 +222,25 @@ const Nav = () => {
         </div>
         <div className={`hidden md:flex gap-[2rem] items-center`}>
           <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
             onClick={() => navigate("/")}
           >
             Home
           </p>
           <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
             onClick={() => navigate("/marketplace")}
           >
             Marketplace
           </p>
           <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
             onClick={() => navigate("/aboutus")}
           >
             About Us
           </p>
           <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
             onClick={() => navigate("/contactUs")}
           >
             Contact Us
@@ -249,7 +249,7 @@ const Nav = () => {
 
         {isLoggedInUser ? (
           <div
-            className="hidden md:block bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
+            className="hidden md:block bg-gradient-to-r from-[#219653] to-[#6fcf97] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
             onClick={onLogout}
           >
             Logout
@@ -257,13 +257,13 @@ const Nav = () => {
         ) : (
           <div className="hidden md:flex gap-[1rem] items-center">
             <p
-              className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+              className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
               onClick={() => navigate("/login")}
             >
               Login
             </p>
             <div
-              className="bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
+              className="bg-gradient-to-r from-[#219653] to-[#6fcf97] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
               onClick={() => navigate("/signup")}
             >
               Get Started
@@ -276,7 +276,7 @@ const Nav = () => {
       {menuOpen && (
         <div className="md:hidden flex flex-col items-start mt-[1rem] gap-[1rem]">
           <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
             onClick={() => {
               navigate("/");
               toggleMenu();
@@ -285,7 +285,7 @@ const Nav = () => {
             Home
           </p>
           <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
             onClick={() => {
               navigate("/marketplace");
               toggleMenu();
@@ -294,7 +294,7 @@ const Nav = () => {
             Marketplace
           </p>
           <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
             onClick={() => {
               navigate("/aboutus");
               toggleMenu();
@@ -303,7 +303,7 @@ const Nav = () => {
             About Us
           </p>
           <p
-            className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+            className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
             onClick={() => {
               navigate("/contactUs");
               toggleMenu();
@@ -313,7 +313,7 @@ const Nav = () => {
           </p>
           {isLoggedInUser ? (
             <div
-              className="bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
+              className="bg-gradient-to-r from-[#219653] to-[#6fcf97] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
               onClick={() => {
                 onLogout();
                 toggleMenu();
@@ -324,7 +324,7 @@ const Nav = () => {
           ) : (
             <div className="flex flex-col gap-[1rem]">
               <p
-                className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
+                className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
                 onClick={() => {
                   navigate("/login");
                   toggleMenu();
@@ -333,7 +333,7 @@ const Nav = () => {
                 Login
               </p>
               <div
-                className="bg-[#2874fc] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
+                className="bg-gradient-to-r from-[#219653] to-[#6fcf97] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
                 onClick={() => {
                   navigate("/signup");
                   toggleMenu();

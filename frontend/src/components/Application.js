@@ -248,14 +248,15 @@ const Application = () => {
       {/* Marketplace Connect */}
       <div className="mt-[5rem] flex flex-col">
         <div className="flex flex-col gap-[0.2rem] px-[4rem] items-center">
-          <h3 className="text-bold text-[4rem] underline-offset-4">
+          <h3 className="text-bold text-[4rem] underline-offset-4 flex items-center gap-2">
+            <img src="/public/opt.png" alt="Leaf" className="w-12 h-12 inline-block" />
             Our Solutions
           </h3>
-          <div className="h-[0.4rem] w-[10rem] bg-[#2874fc]" />
+          <div className="h-[0.4rem] w-[10rem] bg-[#219653]" />
         </div>
         <div className="flex justify-around items-center mt-[2rem]">
           <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
-            <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
+            <h1 className="text-[#219653] madimi-one-regular text-[1.3rem]">
               Marketplace Connect
             </h1>
             <h1 className="anton-regular text-[2.5rem]">
@@ -268,7 +269,7 @@ const Application = () => {
               Our solution bridges the gap between farmers and buyers for a seamless experience.
             </h4>
             <div
-              className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
+              className="bg-gradient-to-r from-[#219653] to-[#6fcf97] hover:from-[#27ae60] hover:to-[#219653] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
               onClick={() => navigate("/marketplace")}
             >
               Learn More
@@ -295,7 +296,7 @@ const Application = () => {
           />
         </div>
         <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
-          <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
+          <h1 className="text-[#219653] madimi-one-regular text-[1.3rem]">
             Secure Contracts
           </h1>
           <h1 className="anton-regular text-[2.5rem]">
@@ -308,7 +309,7 @@ const Application = () => {
             Experience secure and reliable contract management with blockchain technology.
           </h4>
           <div
-            className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
+            className="bg-gradient-to-r from-[#219653] to-[#6fcf97] hover:from-[#27ae60] hover:to-[#219653] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold"
             onClick={() => navigate("/securecontracts")}
           >
             Learn More
@@ -320,7 +321,7 @@ const Application = () => {
       {/* AI Insights */}
       <div className="flex justify-around items-center mt-[3rem]">
         <div className="flex flex-col w-[35rem] gap-[1rem] px-auto justify-center">
-          <h1 className="text-[#2874fc] madimi-one-regular text-[1.3rem]">
+          <h1 className="text-[#219653] madimi-one-regular text-[1.3rem]">
             AI Insights
           </h1>
           <h1 className="anton-regular text-[2.5rem]">
@@ -332,7 +333,7 @@ const Application = () => {
           <h4 className="text-[1.1rem] text-gray-500">
             Leverage AI to enhance crop management and improve yields.
           </h4>
-          <div className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold">
+          <div className="bg-gradient-to-r from-[#219653] to-[#6fcf97] hover:from-[#27ae60] hover:to-[#219653] w-[12rem] flex gap-[0.5rem] hover:gap-[0.8rem] justify-center cursor-pointer py-[1rem] text-[1.1rem] text-white font-bold">
             Learn More
             <img src="./right.png" alt="Arrow" className="w-[2rem]" />
           </div>

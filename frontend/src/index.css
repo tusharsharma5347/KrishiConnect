@@ -11,31 +11,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
-.madimi-one-regular {
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+body {
+  background: linear-gradient(135deg, #e9f7ef 0%, #f7fff7 100%);
+  min-height: 100vh;
 }
-.teko {
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+
+/* Agritech green accent classes */
+.bg-agritech-green {
+  background-color: #219653;
 }
-.anton-regular {
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.text-agritech-green {
+  color: #219653;
 }
-.acme-regular {
-  font-family: "Acme", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.bg-agritech-gradient {
+  background: linear-gradient(90deg, #219653 0%, #6fcf97 100%);
 }
-.yantramanav-regular {
-  font-family: "Yantramanav", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+/* Update scrollbars for green accent */
+::-webkit-scrollbar-thumb {
+  background: #219653;
+  border-radius: 8px;
 }
 
 /* //Landing Page  */
