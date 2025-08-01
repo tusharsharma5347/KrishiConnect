@@ -140,6 +140,7 @@
 //             className="text-[1rem] cursor-pointer hover:text-[#2874fc] font-medium"
 //             onClick={() => navigate("/contactUs")}
 //           >
+
 //             Contact Us
 //           </p>
 //         </div>
@@ -235,12 +236,14 @@ const Nav = () => {
           </p>
           <p
             className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
+
             onClick={() => navigate("/aboutus")}
           >
             About Us
           </p>
           <p
             className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
+
             onClick={() => navigate("/contactUs")}
           >
             Contact Us
@@ -250,6 +253,8 @@ const Nav = () => {
         {isLoggedInUser ? (
           <div
             className="hidden md:block bg-gradient-to-r from-[#219653] to-[#6fcf97] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
+
+        
             onClick={onLogout}
           >
             Logout
@@ -277,6 +282,7 @@ const Nav = () => {
         <div className="md:hidden flex flex-col items-start mt-[1rem] gap-[1rem]">
           <p
             className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
+
             onClick={() => {
               navigate("/");
               toggleMenu();
@@ -286,6 +292,7 @@ const Nav = () => {
           </p>
           <p
             className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
+
             onClick={() => {
               navigate("/marketplace");
               toggleMenu();
@@ -313,7 +320,9 @@ const Nav = () => {
           </p>
           {isLoggedInUser ? (
             <div
+
               className="bg-gradient-to-r from-[#219653] to-[#6fcf97] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
+
               onClick={() => {
                 onLogout();
                 toggleMenu();
@@ -325,6 +334,7 @@ const Nav = () => {
             <div className="flex flex-col gap-[1rem]">
               <p
                 className="text-[1rem] cursor-pointer hover:text-[#219653] font-medium"
+
                 onClick={() => {
                   navigate("/login");
                   toggleMenu();
@@ -334,6 +344,7 @@ const Nav = () => {
               </p>
               <div
                 className="bg-gradient-to-r from-[#219653] to-[#6fcf97] rounded-lg px-[1.5rem] py-[0.5rem] cursor-pointer text-white text-[0.9rem] font-semibold"
+
                 onClick={() => {
                   navigate("/signup");
                   toggleMenu();
