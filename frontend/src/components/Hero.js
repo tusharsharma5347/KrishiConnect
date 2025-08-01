@@ -161,32 +161,21 @@ const Hero = () => {
       <div id="google_translate_element"></div>
       <div className="flex flex-col w-full lg:w-[40%] gap-[1rem] text-center lg:text-left">
         <h1 className="text-[2.5rem] lg:text-[3.5rem] font-bold leading-tight">
-          Revolutionizing{" "}
-          <span className="text-[#2874fc]">Agriculture</span> with Smart{" "}
-          <span className="text-[#2874fc]">Contracts</span>
+          KrishiConnect - Your Gateway to{" "}
+          <span className="text-agritech-green">Fair and Transparent</span> Farming
         </h1>
         <p className="text-[1.2rem] mb-[2rem]">
-          Connect with farmers and buyers seamlessly. Explore our platform for secure, transparent, and efficient contract farming.
+          कृषि कनेक्ट - किसानों और खरीदारों के बीच एक सीधा संपर्क
         </p>
         <div
-          className="bg-[#2874fc] hover:bg-[#2876fcf1] w-[18rem] flex justify-center mx-auto lg:mx-0 cursor-pointer py-[1rem] text-[1rem] text-white font-bold rounded-lg"
+          className="bg-agritech-gradient hover:from-green-600 hover:to-green-700 w-[18rem] flex justify-center mx-auto lg:mx-0 cursor-pointer py-[1rem] text-[1rem] text-white font-bold rounded-lg shadow-lg transition-all duration-300"
           onClick={() => navigate(isLoggedInUser ? "/marketplace" : "/signup")}
         >
           Get Started
           <div className="flex items-center ml-[0.5rem]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="3.5"
-              stroke="currentColor"
-              className="w-4 h-4 font-bold"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-              />
+            {/* Optionally add a leaf/farm icon here */}
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="3.5" stroke="currentColor" className="w-4 h-4 font-bold">
+              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
             </svg>
           </div>
         </div>

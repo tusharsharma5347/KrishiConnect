@@ -1,4 +1,3 @@
-
 # 🌾 KrishiConnect - Empowering Farmers, Enriching Communities
 
 **KrishiConnect** is a revolutionary platform that connects Indian farmers directly with buyers, creating a fair, transparent, and efficient agricultural supply chain. By bridging the gap between producers and consumers, KrishiConnect brings fresh produce directly from farms to markets, ensuring better income for farmers and quality produce for buyers. With a user-friendly interface and bilingual support, KrishiConnect is built to empower rural communities across India.
@@ -14,7 +13,6 @@
 6. [UI and Design](#ui-and-design)
 7. [Getting Started](#getting-started)
 8. [Contributing](#contributing)
-9. [License](#license)
 
 ---
 
